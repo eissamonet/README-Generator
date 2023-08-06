@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateReadme = require('./utils/generateReadme.js');
+const generateReadme = require('./utils/generateReadme');
 
 
 // prompt user to answer questions
@@ -66,22 +66,17 @@ const promptUser = () => {
         },
         
         
-        
-        
-
-
-
-
-
-
-
     ])
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Create a function to write README file
 
-// TODO: Create a function to initialize app
+const writeFile = data => {
+    fs.writeFile('README.md', data, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md!')
+    );
+}
+// Create a function to initialize app
 function init() {}
 
 // Function call to initialize app
