@@ -77,10 +77,4 @@ const init = () => {
     .catch((err) => console.error(err));
 };
 
-// Create a function to initialize app
-  
-
-
-
-// Function call to initialize app
 init();
