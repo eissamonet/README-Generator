@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateReadme = require('./utils/generateReadme');
+const generateReadme = require('./utils/generateMarkdown');
 
 
 // prompt user to answer questions
@@ -69,7 +69,7 @@ const promptUser = () => {
     ])
 }
 
-// Create a function to write README file
+// writeFilesync as a promise
 const init = () => {
     promptUser()
     .then ((answers) => fs.writeFile('README.md', generateReadme(answers)))
