@@ -70,14 +70,17 @@ const promptUser = () => {
 }
 
 // Create a function to write README file
+const init = () => {
+    promptUser()
+    .then ((answers) => fs.writeFile('README.md', generateReadme(answers)))
+    .then(() => console.log('Successfully wrote to README.md'))
+    .catch((err) => console.error(err));
+};
 
-const writeFile = data => {
-    fs.writeFile('README.md', data, (err) =>
-        err ? console.log(err) : console.log('Successfully created README.md!')
-    );
-}
 // Create a function to initialize app
-function init() {}
+  
+
+
 
 // Function call to initialize app
 init();
