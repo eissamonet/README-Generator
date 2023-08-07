@@ -14,6 +14,10 @@
 A command-line application is created that dynamically generates a professional README.md file from a user's input.
 A full-length video on how to generate a README file can be shown here: [README Video](https://drive.google.com/file/d/1-Px5RwmPwmizOoOgnxPX9zN4UJyfuqbZ/view).
 
+<img width="1192" alt="Screenshot 2023-08-07 at 6 08 22 PM" src="https://github.com/eissamonet/README-Generator/assets/133728858/4a84e3b5-c849-4ca3-b77c-e121c1cb3515">
+
+
+
 ## User Story
 
 AS A developer
