@@ -46,7 +46,7 @@ GIVEN a command-line application that accepts user input
 ## Usage
 
 The application will be invoked by using the following command:
-node index.js.
+"node index.js."
 
 
 ## Questions
