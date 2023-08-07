@@ -12,6 +12,7 @@
 
 ## Description
 A command-line application is created that dynamically generates a professional README.md file from a user's input.
+A full-length video on how to generate a README file can be shown here: [README Video](https://drive.google.com/file/d/1-Px5RwmPwmizOoOgnxPX9zN4UJyfuqbZ/view).
 
 ## User Story
 
@@ -46,7 +47,7 @@ GIVEN a command-line application that accepts user input
 ## Usage
 
 The application will be invoked by using the following command:
-"node index.js."
+node index.js.
 
 
 ## Questions
