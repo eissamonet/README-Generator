@@ -17,7 +17,7 @@ A command-line application is created that dynamically generates a professional 
 
 AS A developer
 I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+SO THAT I can quickly create a professional README for a new project.
 
 ## Acceptance Criteria
 
@@ -51,4 +51,4 @@ node index.js.
 
 ## Questions
 
-For questions, feel free to email me at: eissamonet@me.com. You may also view more projects at:[GitHub](https://github.com/eissamonet).
+For questions, feel free to email me at: eissamonet@me.com. You may also view more projects at: [GitHub](https://github.com/eissamonet).
