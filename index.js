@@ -21,7 +21,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'What steps are required to install this project?',
+            message: 'Decribe the installation prcess for this project?',
         },
         {
             type: 'input',
@@ -52,7 +52,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'questions',
-            message: 'What is the title of your project?',
+            message: 'Who do I contact for questions or issues?',
         },
         {
             type: 'input',
@@ -63,18 +63,30 @@ const promptUser = () => {
             type: 'input',
             name: 'email',
             message: 'Enter your email?',
-        },
-        
-        
-    ])
-}
-
-// writeFilesync as a promise
-const init = () => {
-    promptUser()
-    .then ((answers) => fs.writeFile('README.md', generateReadme(answers)))
-    .then(() => console.log('Successfully wrote to README.md'))
-    .catch((err) => console.error(err));
+        }
+    ]);
 };
 
-init();
+const writeFile = data => {
+    fs.writeFile('README.md', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log('Successfully wrote to README.md!')
+        }
+        
+    })
+};
+
+promptUser()
+.then(answers => {
+    return generateReadme(answers);
+})
+.then(data => {
+    return writeFile(data);
+})
+.catch(err => {
+    console.log(err)
+});
+    
